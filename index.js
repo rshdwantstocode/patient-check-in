@@ -16,5 +16,5 @@ app.get("/", (req, res) => {
 
 
 app.listen(port, () => {
-    console.log('server now running at port '+ port );
+    console.log('Server now running at Port '+ port );
 });
