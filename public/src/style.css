@@ -1,6 +1,6 @@
 .form-login {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(50px);
     animation: fadeInUp 1.5s ease forwards;
   }
 
