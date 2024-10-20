@@ -31,10 +31,15 @@ app.get("/", (req, res) => {
   }
 });
 
+app.get("/home", (req, res)=>{
+  res.render("home");
+});
+
 app.post("/login", async (req, res)=>{
   const {username, password} = req.body;
   try {
-    const result = await data.query("SELECT username, password FROM admins");
+    // pass: 123
+    const result = await data.query("SELECT username, password FROM admins");    
     if (result.rows[0].username === username && result.rows[0].password === password) {
         res.render("home");
     } else {
